@@ -1,0 +1,23 @@
+:root{
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vw);
+    --negro: #000000;
+    --blanco: #ffffff;
+    --share: 'Share Tech Mono', monospace;
+    --subtext: 'Roboto Mono', monospace;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Share Tech Mono', monospace;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+img{max-width: 100%;}
