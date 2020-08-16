@@ -21,3 +21,35 @@ html{
     color: var(--blanco);
 }
 img{max-width: 100%;}
+
+/*****************NAVBAR**************************************/
+.navbar{
+    font-size: 1rem;
+    display: flex;
+    border: var(--blanco) 0.063em solid;
+    /*border-radius: 0 0 0.929em 0.929em;*/
+    align-items: center;
+    padding: 0.892em
+}
+
+.navbar__list{
+    list-style-type: none;
+    display: flex;
+    align-items: center ;
+    justify-content: flex-end;
+    width:100%;     
+}
+
+.navbar__item + .navbar__item{margin-left: 4em;} 
+
+.navbar__item--logo{margin-right: auto;}
+
+.navbar__anchor{
+    font-size: 1.5em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar__anchor--logo{
+    font-size: 1.98em;
+}
