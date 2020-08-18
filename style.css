@@ -26,8 +26,8 @@ img{max-width: 100%;}
 .navbar{
     font-size: 1rem;
     display: flex;
-    border: var(--blanco) 0.063em solid;
-    /*border-radius: 0 0 0.929em 0.929em;*/
+    /*border: var(--blanco) 0.063em solid;
+    border-radius: 0 0 0.929em 0.929em;*/
     align-items: center;
     padding: 0.892em
 }
@@ -55,8 +55,12 @@ img{max-width: 100%;}
 }
 
 .navbar__dropdown{
+    display: none;
     font-size: 1rem;
-    width: 15em;
+    width: 14em;
+    position: absolute;
+    top: 100%;
+    left: -300%;
 
 }
 .bordered{
@@ -66,6 +70,7 @@ img{max-width: 100%;}
 }
 .dropdown__list{
     border:var(--blanco) 1px solid;
+    list-style-type: none;
 
 }
 .dropdown__item{
@@ -94,6 +99,28 @@ img{max-width: 100%;}
     margin-left: auto;
 }
 
+.dropdown__icon--crypto{
+    fill: var(--blanco);
+}
+
 .dropdown__text{
     font-size: 1.23em;
+}
+
+.dropdown__item:hover a > *, .dropdown__item:hover {
+    stroke:var(--negro);
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+
+.dropdown__item:hover .dropdown__icon--crypto{
+    fill: var(--negro);
+}
+
+.navbar__item--relative{
+    position: relative;
+}
+
+.navbar__item--relative:hover  .navbar__dropdown{
+    display: block;
 }
