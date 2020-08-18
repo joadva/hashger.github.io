@@ -63,6 +63,15 @@ img{max-width: 100%;}
     left: -300%;
 
 }
+
+.navbar__dropdown--sub{
+    top:0;
+    left: 100%;
+}
+
+.navbar__dropdown--blog{
+    left: -330%;
+}
 .bordered{
     /*font-size: inherit;*/
     border:var(--blanco) 0.14em solid;
@@ -107,13 +116,16 @@ img{max-width: 100%;}
     font-size: 1.23em;
 }
 
-.dropdown__item:hover a > *, .dropdown__item:hover {
+.dropdown__item:hover > .dropdown__anchor  *{
     stroke:var(--negro);
     color: var(--negro);
+
+}
+.dropdown__item:hover{
     background-color: var(--blanco);
 }
 
-.dropdown__item:hover .dropdown__icon--crypto{
+.dropdown__item:hover  > .dropdown__anchor .dropdown__icon--crypto{
     fill: var(--negro);
 }
 
@@ -121,6 +133,6 @@ img{max-width: 100%;}
     position: relative;
 }
 
-.navbar__item--relative:hover  .navbar__dropdown{
+.navbar__item--relative:hover > .navbar__dropdown{
     display: block;
 }
