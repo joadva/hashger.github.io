@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet"> 
     <title>hashger</title>
 </head>
+<script src="https://unpkg.com/feather-icons"></script>
 <body>
     <nav class="navbar">
         <ul class="navbar__list">
@@ -17,5 +18,23 @@
             <li class="navbar__item"><a href="#" class="navbar__anchor">blog</a></li>
         </ul>
     </nav>
+
+    <div class="navbar__dropdown">
+        <ul class="dropdown__list">
+            <li class="dropdown__item bordered">
+                <a href="" class="dropdown__anchor">
+                    <i class="dropdown__icon" data-feather="book-open"></i><span class="dropdown__text">lectures</span><i class="dropdown__icon dropdown__icon--chevron" data-feather="chevron-right"></i>
+                </a>
+            </li>
+            <li class="dropdown__item bordered">
+                <a href="" class="dropdown__anchor">
+                    <svg class="dropdown__icon" xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><title>ionicons-v5-q</title><polygon points='32 192 256 64 480 192 256 320 32 192' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><polyline points='112 240 112 368 256 448 400 368 400 240' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='480' y1='368' x2='480' y2='192' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='320' x2='256' y2='448' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/></svg><span class="dropdown__text">masterclasses</span><i class="dropdown__icon dropdown__icon--chevron" data-feather="chevron-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
