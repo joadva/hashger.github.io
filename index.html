@@ -12,12 +12,13 @@
     
     <nav class="navbar">
         <div class="navbar__logo">
-            <a role="button" href="#" class="navbar__anchor navbar__anchor--logo">&lt;hashger&gt;</a>
+            <a href="#" class="navbar__anchor navbar__anchor--logo">&lt;hashger&gt;</a>
         </div>
         
-        <i class="navbar__icon" data-feather="menu"></i>
+        <i role="button" class="navbar__icon navbar__icon--open displayed--mobile" data-feather="menu"></i>
+        <i role="button" class="navbar__icon navbar__icon--close displayed--mobile undisplayed--mobile" data-feather="x"></i>
         
-        <ul class="navbar__list">
+        <ul class="navbar__list displayed--mobile  undisplayed--mobile">
         
             <li class="navbar__item">
                 <a href="" class="navbar__inner bordered--item">
@@ -298,11 +299,12 @@
             </li>
         </ul>
     </nav>
-    <div class="navbar__mobile-backdrop"></div>
+    <div class="navbar__mobile-backdrop displayed--mobile undisplayed--mobile"></div>
     
     <script>
         feather.replace()
     </script>
     <script src="script.js"></script>
+    
 </body>
 </html>

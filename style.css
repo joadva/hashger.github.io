@@ -157,10 +157,13 @@ img{max-width: 100%;}
         position: relative;
         
     }
-    .navbar__icon, .navbar__logo{
+    .navbar__logo{
         display: block;
         /*z-index: 500;*/
     }
+    .displayed--mobile{display: block;}
+
+    .undisplayed--mobile{display: none;}
 
     .navbar__list{
         width: 100%;
@@ -181,6 +184,7 @@ img{max-width: 100%;}
         display: flex;
         align-items: center;
         background-color: var(--negro);
+        padding: .79em 1.13em;
     }
     .bordered--item{
         border:var(--blanco) 0.14em solid;
@@ -189,7 +193,10 @@ img{max-width: 100%;}
     .navbar__dropdown{
        position: unset;
        width: 100%;
+       font-size: .9rem;
     }
+
+    .navbar__dropdown--sub{font-size:.9em ;}
 
     .dropdown__icon--plus{display: block; margin-left: auto; margin-right: 0;}
 
