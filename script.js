@@ -49,3 +49,21 @@ navbarItems.forEach(item => item.addEventListener('click', (event)=>{
         dropdown.add('displayed--mobile');
     }
 }))
+
+//--------Subdropdowns ----------/////
+const dropdownItems = document.querySelectorAll('.first-level > .dropdown__list > .dropdown__item');
+
+console.log(dropdownItems);
+
+dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
+    event.stopPropagation()
+    event.preventDefault();
+
+    let subDropdown = item.lastElementChild.classList;
+
+    if(subDropdown.contains('displayed--mobile')){
+        subDropdown.remove('displayed--mobile');
+    }else{
+        subDropdown.add('displayed--mobile');
+    }
+}))
