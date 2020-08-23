@@ -37,6 +37,7 @@ const navbarItems = document.querySelectorAll('.navbar__item');
 
 navbarItems.forEach(item => item.addEventListener('click', (event)=>{
 
+    console.log(item)
     if(item == navbarItems[0]) return;
     event.preventDefault();
 
@@ -44,9 +45,15 @@ navbarItems.forEach(item => item.addEventListener('click', (event)=>{
 
     if(dropdown.contains('displayed--mobile')){
         dropdown.remove('displayed--mobile');
+        item.firstElementChild.classList.remove('pressed');
+        item.firstElementChild.lastElementChild.style.stroke= 'var(--blanco)';
 
     }else{
         dropdown.add('displayed--mobile');
+        item.firstElementChild.classList.add('pressed');
+        item.firstElementChild.lastElementChild.style.stroke= 'var(--negro)';
+
+        
     }
 }))
 

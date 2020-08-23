@@ -213,4 +213,10 @@ img{max-width: 100%;}
         left: 0;
         z-index: 50;
     }
+
+    .pressed{
+        color:var(--negro);
+        background-color:var(--blanco);
+        stroke: var(--negro);
+    }
 }
