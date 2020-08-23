@@ -130,10 +130,15 @@ img{max-width: 100%;}
     margin-left: auto;
 }
 
+@media(min-width: 41em){
+    .navbar__item--relative:hover > .navbar__dropdown{display: block;}
+}
 
 .dropdown__icon--crypto{fill: var(--blanco);}
 
 .dropdown__text{font-size: 1.23em;}
+
+.navbar__item--relative{position: relative;}
 
 .dropdown__item:hover > .dropdown__anchor *{
     stroke:var(--negro);
@@ -144,13 +149,11 @@ img{max-width: 100%;}
 
 .dropdown__item:hover  > .dropdown__anchor .dropdown__icon--crypto{fill: var(--negro);}
 
-.navbar__item--relative{position: relative;}
-
-.navbar__item--relative:hover > .navbar__dropdown{display: block;}
 
 
 
-.navbar__mobile-bg{display: none;}
+
+
 
 @media(max-width: 40em){
     .navbar{
