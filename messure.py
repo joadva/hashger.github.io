@@ -1,8 +1,9 @@
 WEBWIDTH  = 1366
 MYWIDTH = 1354
 
-font = 16
+font = 40
+em = 1
 
 converter = ((MYWIDTH*font)/WEBWIDTH)
 
-print(converter/20)
+print((converter/20)/em)
