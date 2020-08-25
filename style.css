@@ -241,6 +241,7 @@ img{max-width: 100%;}
     background-image: url('images/anatomy.jpg');
     background-size: cover;
     padding:15em 9.91em 15em 9.91em;
+    height: 90vh;
 }
 
 
