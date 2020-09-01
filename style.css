@@ -231,14 +231,15 @@ img{max-width: 100%;}
 }
 
 .main-slider__img{
-
-    background-image: url('images/main-slider/anatomia-web.webp');
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
     height:99vh;
+}
+.--anatomia{
+    background-image: url('images/main-slider/anatomia-web.webp');
 }
 
 .main-slilder__figcaption{
@@ -284,19 +285,15 @@ img{max-width: 100%;}
 
 @media(max-width:50em){
     .main-slider__figure{font-size:.9rem;}
-    .main-slider__img{
-        background-image: url('images/main-slider/anatomia-tablet.webp');
-    }
-    .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{
-        margin: 0 6em; 
-    }
+
+    .--anatomia{background-image: url('images/main-slider/anatomia-tablet.webp');}
+    
+    .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{ margin: 0 6em;}
 }
 @media(max-width:33em){
     .main-slider__figure{font-size:1rem;}
-    .main-slider__img{
-        background-image: url('images/main-slider/anatomia-mobile.webp');
-    }
-    .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{
-        margin:0em 5em
-    }
+
+    .--anatomia{background-image: url('images/main-slider/anatomia-mobile.webp');}
+
+    .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{margin:0em 5em}
 }
