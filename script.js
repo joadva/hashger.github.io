@@ -60,7 +60,7 @@ navbarItems.forEach(item => item.addEventListener('click', (event)=>{
 //--------Subdropdowns ----------/////
 const dropdownItems = document.querySelectorAll('.first-level > .dropdown__list > .dropdown__item');
 
-console.log(dropdownItems);
+
 
 dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
     event.stopPropagation()
