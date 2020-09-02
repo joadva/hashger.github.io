@@ -238,16 +238,19 @@ img{max-width: 100%;}
     justify-content: center;
     height:99vh;
 }
-.--anatomia{
-    background-image: url('images/main-slider/anatomia-web.webp');
-}
+.--anatomia{background-image: url('images/main-slider/anatomia-web.webp');}
+
+.--austria{background-image: url('images/main-slider/web.webp');}
+
+.--enigma{background-image: url('images/main-slider/enigma-web.webp');}
 
 .main-slilder__figcaption{
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    background-color: rgba(0,0,0, .6);
+    border-radius: .74rem;
 }
 
 .main-slilder__figcaption--righted{
@@ -267,8 +270,8 @@ img{max-width: 100%;}
 }
 
 .figcaption__text{
-    background-color: rgba(0,0,0, .6);
-    border-radius: .74rem;
+    /*background-color: rgba(0,0,0, .6);
+    border-radius: .74rem;*/
     font-size: 1.98em;
     font-family: var(--subtext);
 }
@@ -287,6 +290,9 @@ img{max-width: 100%;}
     .main-slider__figure{font-size:.9rem;}
 
     .--anatomia{background-image: url('images/main-slider/anatomia-tablet.webp');}
+    .--austria{background-image: url('images/main-slider/tablet.webp');}
+    .--enigma{background-image: url('images/main-slider/enigma-tablet.webp');}
+
     
     .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{ margin: 0 6em;}
 }
@@ -294,6 +300,9 @@ img{max-width: 100%;}
     .main-slider__figure{font-size:1rem;}
 
     .--anatomia{background-image: url('images/main-slider/anatomia-mobile.webp');}
+    .--austria{background-image: url('images/main-slider/mobile.webp');}
+    .--enigma{background-image: url('images/main-slider/enigma-mobile.webp');}
+
 
     .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{margin:0em 5em}
 }
