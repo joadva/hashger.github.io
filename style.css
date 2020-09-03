@@ -224,10 +224,12 @@ img{max-width: 100%;}
 
 .main-slider__list{list-style-type: none;}
 
-.main-slider__element{}
+.main-slider__element{
+}
 
 .main-slider__figure{
     font-size: .8rem;
+    position: absolute;
 }
 
 .main-slider__img{
@@ -236,7 +238,8 @@ img{max-width: 100%;}
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    height:99vh;
+    height:97vh;
+    border-radius: 0 0 .92em .92em;
 }
 .--anatomia{background-image: url('images/main-slider/anatomia-web.webp');}
 
@@ -254,10 +257,10 @@ img{max-width: 100%;}
 }
 
 .main-slilder__figcaption--righted{
-    margin:0 5em 0 30em
+    margin:0 5em 0 20em
 }
 .main-slilder__figcaption--lefted{
-    margin: 0 30em 0 5em
+    margin: 0 20em 0 5em
 }
 
 .main-slilder__figcaption > * + *{
@@ -286,6 +289,24 @@ img{max-width: 100%;}
     padding: .22em 1.3em;
 }
 
+.course-categrory-corner{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 .92em 0 .92em;
+    background-color: var(--blanco);
+    color: var(--negro);
+
+}
+.course-categrory-corner__text{
+    font-size: 2.47em;
+}
+.course-categrory-corner__icon{
+    height: 2.47em;
+    width: 2.47em;
+}
+
 @media(max-width:50em){
     .main-slider__figure{font-size:.9rem;}
 
@@ -304,5 +325,6 @@ img{max-width: 100%;}
     .--enigma{background-image: url('images/main-slider/enigma-mobile.webp');}
 
 
-    .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{margin:0em 5em}
+    .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{margin:0 1em}
 }
+
