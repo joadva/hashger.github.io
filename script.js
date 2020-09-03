@@ -74,3 +74,17 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
         subDropdown.add('displayed--mobile');
     }
 }))
+
+/*---------------------------TYNY SLIDER---------------------*/
+
+let mainSlider = tns({
+    container: '.main-slider__list',
+    items: 1,
+    autoplay: true,
+    mode: 'gallery',
+    controls: false,
+    nav:false,
+    autoplayButtonOutput: false,
+    rewind: true
+
+}) 
