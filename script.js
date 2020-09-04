@@ -76,7 +76,7 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
 }))
 
 /*---------------------------TYNY SLIDER---------------------*/
-
+/*
 let mainSlider = tns({
     container: '.main-slider__list',
     items: 1,
@@ -87,4 +87,16 @@ let mainSlider = tns({
     autoplayButtonOutput: false,
     rewind: true
 
+}) 
+*/
+
+let mainSlider = tns({
+    container: '.main-slider__list',
+    items: 1,
+    autoplay: true,
+    arrowKeys:true,
+    controls: false,
+    autoplayButtonOutput: false,
+    nav:true,
+    navPosition: 'bottom',
 }) 

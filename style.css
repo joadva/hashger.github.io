@@ -229,7 +229,7 @@ img{max-width: 100%;}
 
 .main-slider__figure{
     font-size: .8rem;
-    position: absolute;
+
 }
 
 .main-slider__img{
@@ -238,7 +238,7 @@ img{max-width: 100%;}
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    height:97vh;
+    height:98vh;
     border-radius: 0 0 .92em .92em;
 }
 .--anatomia{background-image: url('images/main-slider/anatomia-web.webp');}
@@ -340,3 +340,25 @@ img{max-width: 100%;}
     .main-slilder__figcaption--righted, .main-slilder__figcaption--lefted{margin:0 1em}
 }
 
+
+
+.tns-nav {
+    text-align: center;
+    margin: 0px 0;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+  }
+
+.tns-nav > [aria-controls] {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background:var(--blanco);
+    border-color: var(--negro);
+    border-width: 0;
+  }
+
+  .tns-nav > .tns-nav-active { background:var(--negro); }
