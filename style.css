@@ -317,6 +317,7 @@ img{max-width: 100%;}
 .course-categrory-corner__icon{
     height: 1.85em;
     width: 1.85em;
+    stroke: var(--negro);
 }
 
 @media(max-width:50em){
