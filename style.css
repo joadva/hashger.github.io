@@ -349,6 +349,11 @@ img{max-width: 100%;}
     position: absolute;
     top: 93%;
     left: 50%;
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    border-radius: .54rem;
   }
 
 .tns-nav > [aria-controls] {
