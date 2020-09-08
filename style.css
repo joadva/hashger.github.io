@@ -533,3 +533,18 @@ img{max-width: 100%;}
 
 
 }
+
+@media(max-width:33em){
+    .section{width: 100%}
+    .section__icon{
+        position: relative;
+    }
+    .section__desciption{
+        position: absolute;
+
+        background-color: rgba(0,0,0, .7);
+        border-radius: .74rem;
+    }
+    .section__icon{opacity: .5;}
+
+}
