@@ -515,8 +515,10 @@ img{max-width: 100%;}
 .section__icon{
     width:14.3em;
     height:14.3em;
+    stroke:var(--blanco);
     flex: 50%
 }
+.section__icon--build{order: 1}
 
 .section__desciption{
     display: flex;
@@ -530,9 +532,9 @@ img{max-width: 100%;}
 .section__text{
     font-size: calc(1.73em / 1.5);
     font-family: var(--subtext);
-
-
 }
+.section__title, .section__text{ text-align: right;}
+.section__desciption--build >  .section__title, .section__desciption--build > .section__text{ text-align: left;}
 
 @media(max-width:33em){
     .section{width: 100%}
@@ -546,5 +548,9 @@ img{max-width: 100%;}
         border-radius: .74rem;
     }
     .section__icon{opacity: .5;}
+    .section__title, .section__text{ text-align: center;}
+    .section__desciption--build >  .section__title, .section__desciption--build > .section__text{ text-align: center;}
 
 }
+
+.main > * + * {margin-top:3rem;}
