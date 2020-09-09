@@ -516,19 +516,26 @@ img{max-width: 100%;}
     width:14.3em;
     height:14.3em;
     stroke:var(--blanco);
-    flex: 50%
+    flex: 40%
 }
 .section__icon--build{order: 1}
 
 .section__desciption{
     display: flex;
     flex-direction: column;
-    flex: 50%
+    flex: 60%
 
 }
 .section__title{
     font-size: 3.46em;
 }
+.section__title span{
+    color: var(--negro);
+    background-color: var(--blanco);
+    border-radius: calc(0.74em /3.46 );
+    padding: 0 .5em
+}
+
 .section__text{
     font-size: calc(1.73em / 1.5);
     font-family: var(--subtext);
@@ -550,6 +557,7 @@ img{max-width: 100%;}
     .section__icon{opacity: .5;}
     .section__title, .section__text{ text-align: center;}
     .section__desciption--build >  .section__title, .section__desciption--build > .section__text{ text-align: center;}
+    .section__icon--build{order: 0}
 
 }
 
