@@ -544,7 +544,7 @@ img{max-width: 100%;}
 .section__desciption--build >  .section__title, .section__desciption--build > .section__text{ text-align: left;}
 
 @media(max-width:33em){
-    .section{width: 100%}
+    .section{width: 95%}
     .section__icon{
         position: relative;
     }
@@ -558,7 +558,14 @@ img{max-width: 100%;}
     .section__title, .section__text{ text-align: center;}
     .section__desciption--build >  .section__title, .section__desciption--build > .section__text{ text-align: center;}
     .section__icon--build{order: 0}
+    .section__title span{
+        background-color: unset;
+        color: var(--blanco);
+    }
 
 }
-
 .main > * + * {margin-top:3rem;}
+
+
+/*************************courses-carrusell***************************************************/
+
