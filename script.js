@@ -91,9 +91,10 @@ const mainSlider = tns({
 let carrusell = tns({
     container: '.courses-carrusell__list',
     mouseDrag: true,
-    items: 3,
+    items: 2,
     controls: false,
     nav:false,
     autoplayButtonOutput: false,
-    edgePadding: 30
+    edgePadding: 30,
+    swipeAngle: false,
 }) 
