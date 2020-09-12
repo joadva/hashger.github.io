@@ -95,5 +95,5 @@ let carrusell = tns({
     controls: false,
     nav:false,
     autoplayButtonOutput: false,
-    edgePadding: 50
+    edgePadding: 30
 }) 
