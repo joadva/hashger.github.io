@@ -600,21 +600,25 @@ img{max-width: 100%;}
 }
 
 .courses-carrusell__description{
-    font-size:.8em;
+    font-size:.7em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: .2em;
+    margin: 0 .1em .1em .1em;
+    flex:50%;
+
 }
 
 .courses-carrusell__title{
-    font-size: 1.73em;
+    font-size: 1.6em;
+    margin-bottom: .1em;
+    
 }
 
 .courses-carrusell__text{
-    font-size: .79em;
+    font-size: .9em;
     font-family: var(--subtext) ;
 }
 
@@ -661,6 +665,7 @@ img{max-width: 100%;}
     .courses-carrusell__box{
         flex-direction: column;
         
+        
     }
     .courses-carrusell_img{
         border-right: unset;
@@ -669,8 +674,9 @@ img{max-width: 100%;}
         border-radius: 0.74em;
     }
     .courses-carrusell__description{
+        flex: 50%;
         font-size:1em;
-        margin: 1em .1em 1.5em .1em;
+        margin: .2em .2em 2em .2em;
     }
 }
 
