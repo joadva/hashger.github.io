@@ -565,12 +565,15 @@ img{max-width: 100%;}
     }
 
 }
-.main > * + * {margin-top:3rem;}
+.main > * + * {margin-top:4rem;}
 
 
 /*************************courses-carrusell***************************************************/
 
-.courses-carrusell{width: 100%;}
+.courses-carrusell{
+    width: 100%;
+    margin-top: 2.5em
+}
 
 .courses-carrusell__category-title{
     text-align: center;

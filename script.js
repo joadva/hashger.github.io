@@ -97,6 +97,7 @@ let carrusell = tns({
     autoplayButtonOutput: false,
     edgePadding: 40,
     swipeAngle: false,
+
     responsive:{
         517:{
             items: 3,
@@ -106,5 +107,5 @@ let carrusell = tns({
         788:{
             edgePadding: 20,
         },
-    }
+    },
 }) 
