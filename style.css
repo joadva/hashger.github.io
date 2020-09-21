@@ -572,6 +572,24 @@ img{max-width: 100%;}
 
 .courses-carrusell{width: 100%;}
 
+.courses-carrusell__category-title{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.category-title_icon{
+    width: 2.47em;
+    height: 2.47em;
+    margin-right: .5em;
+}
+.courses-carrusell__category-title span{
+    font-size: 2.47em;
+}
+
+
 .courses-carrusell__list{
     list-style-type: none;
     display: flex;
