@@ -109,3 +109,57 @@ let carrusell = tns({
         },
     },
 }) 
+
+
+
+
+
+let carrusell2 = tns({
+    container: '.courses-carrusell__list--2',
+    mouseDrag: true,
+    items: 2,
+    controls: false,
+    nav:false,
+    autoplayButtonOutput: false,
+    edgePadding: 40,
+    swipeAngle: false,
+
+    responsive:{
+        517:{
+            items: 3,
+            edgePadding: 35,
+
+        },
+        788:{
+            edgePadding: 20,
+        },
+    },
+}) 
+
+let carrusell3 = tns({
+    container: '.courses-carrusell__list--3',
+    mouseDrag: true,
+    items: 2,
+    controls: false,
+    nav:false,
+    autoplayButtonOutput: false,
+    edgePadding: 40,
+    swipeAngle: false,
+
+    responsive:{
+        517:{
+            items: 3,
+            edgePadding: 35,
+
+        },
+        788:{
+            edgePadding: 20,
+        },
+    },
+}) 
+
+
+
+
+
+
