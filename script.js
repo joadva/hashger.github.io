@@ -168,7 +168,7 @@ let carrusell4 = tns({
     nav:false,
     autoplayButtonOutput: false,
     autoplay: true,
-    loop: true
+    loop: true,
 })
 
 
