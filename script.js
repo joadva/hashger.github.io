@@ -160,6 +160,16 @@ let carrusell3 = tns({
 
 
 
+let carrusell4 = tns({
+    container: '.community__list',
+    mouseDrag: true,
+    items: 1,
+    controls: false,
+    nav:false,
+    autoplayButtonOutput: false,
+    autoplay: true,
+    loop: true
+})
 
 
 

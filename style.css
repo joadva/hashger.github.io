@@ -565,7 +565,7 @@ img{max-width: 100%;}
     }
 
 }
-.main > * + * {margin-top:4rem;}
+.main > * + * {margin-top:8rem;}
 
 
 /*************************courses-carrusell***************************************************/
@@ -716,4 +716,26 @@ img{max-width: 100%;}
         width: 100%;
         border-radius: 0.74em;
     }
+}
+
+/*************************community***************************************************/
+
+.community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.community__paragraph{
+    text-align: center;
+    font-family: var(--subtext);
+    font-size: 1.73em;
+}
+
+.community__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
