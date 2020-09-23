@@ -1,7 +1,7 @@
 WEBWIDTH  = 1366
 MYWIDTH = 1354
 
-font =35
+font =30
 em = 1
 
 converter = ((MYWIDTH*font)/WEBWIDTH)
