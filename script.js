@@ -143,7 +143,7 @@ let carrusell3 = tns({
     controls: false,
     nav:false,
     autoplayButtonOutput: false,
-    edgePadding: 40,
+    edgePadding: 30,
     swipeAngle: false,
 
     responsive:{
