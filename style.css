@@ -124,7 +124,7 @@ img{max-width: 100%;}
     margin-right: 0.74rem;
     stroke: var(--blanco);
 }
-/*.dropdown__icon--plus{display: none;} */
+.dropdown__icon--plus, .dropdown__icon--minus{display: none;} 
 
 .dropdown__icon--chevron{
     margin-right: 0;
@@ -229,6 +229,18 @@ img{max-width: 100%;}
         color:var(--negro);
         background-color:var(--blanco);
         stroke: var(--negro);
+    }
+    .pressed--2{
+        color: var(--negro);
+        stroke: var(--negro)
+    }
+    .subdropdown-pressed{
+        background-color: var(--blanco);
+    }
+    
+
+    .rotate{
+        transform: rotate(90deg);
     }
 }
 

@@ -68,14 +68,29 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
     event.stopPropagation()
     event.preventDefault();
 
-    let subDropdown = item.lastElementChild.classList;
+    const subDropdown = item.lastElementChild.classList;
+    const subDropdownAnchor = item.firstElementChild;
+    const subDropdownIcon = subDropdownAnchor.firstElementChild;
+    const chevron = subDropdownAnchor.lastElementChild;
 
     if(subDropdown.contains('displayed--mobile')){
+    
         subDropdown.remove('displayed--mobile');
+        item.classList.remove('subdropdown-pressed');;
+        subDropdownAnchor.classList.remove('pressed--2');
+        subDropdownIcon.classList.remove('pressed--2')
+        chevron.classList.remove('pressed--2');
+        chevron.classList.remove('rotate');
+
     }else{
         subDropdown.add('displayed--mobile');
+        item.classList.add('subdropdown-pressed');
+        subDropdownAnchor.classList.add('pressed--2');
+        subDropdownIcon.classList.add('pressed--2');
+        chevron.classList.add('pressed--2');
+        chevron.classList.add('rotate');
     }
-}))
+}));
 
 /*---------------------------TYNY SLIDER---------------------*/
 
