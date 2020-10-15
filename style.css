@@ -80,7 +80,7 @@ img{max-width: 100%;}
     width: 14em;
     position: absolute;
     top: 100%;
-    left: -200%;
+    left: -100%;
 
 }
 
@@ -90,8 +90,8 @@ img{max-width: 100%;}
     font-size: .8em;
 }
 
-.navbar__dropdown--blog{left: -220%;}
-.navbar__dropdown--build{left: -200%;}
+.navbar__dropdown--blog{left: -230%;}
+.navbar__dropdown--build{left: -100%;}
 
 .bordered{
     /*font-size: inherit;*/
@@ -828,4 +828,16 @@ img{max-width: 100%;}
     .footer{
         font-size: .8rem;
     }
+}
+
+
+
+/*bloked sections*/
+/*navbar__item--relative commented at html subdropdowns*/
+.blocked{
+    display: none;
+}
+
+.feather-chevron-right{
+    display: none;
 }

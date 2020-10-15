@@ -11,6 +11,15 @@ const closeButton = document.querySelector('.navbar__icon--close')
 /*navbar__icon--open displayed--mobile*/
 /*navbar__icon--close displayed--mobile undisplayed--mobile*/
 
+
+function closeNavbar(){
+    menuButton.classList.remove('undisplayed--mobile');
+    closeButton.classList.add('undisplayed--mobile');
+
+    mobileBackdrop.classList.add('undisplayed--mobile');
+    dropdownList.classList.add('undisplayed--mobile');
+}
+
 menuButton.addEventListener('click', ()=>{
     menuButton.classList.add('undisplayed--mobile');
     closeButton.classList.remove('undisplayed--mobile');
@@ -22,11 +31,7 @@ menuButton.addEventListener('click', ()=>{
 });
 
 closeButton.addEventListener('click', ()=>{
-    menuButton.classList.remove('undisplayed--mobile');
-    closeButton.classList.add('undisplayed--mobile');
-
-    mobileBackdrop.classList.add('undisplayed--mobile');
-    dropdownList.classList.add('undisplayed--mobile');
+    closeNavbar()
 })
 
 
@@ -38,7 +43,7 @@ const navbarItems = document.querySelectorAll('.navbar__item');
 navbarItems.forEach(item => item.addEventListener('click', (event)=>{
     event.stopPropagation();
     if(item == navbarItems[0]) return;
-    /*event.preventDefault(); */
+    event.preventDefault(); 
 
     const dropdown = item.lastElementChild;
     const navbarAnchor = item.firstElementChild;
@@ -72,7 +77,7 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
     const subDropdownAnchor = item.firstElementChild;
     const subDropdownIcon = subDropdownAnchor.firstElementChild;
     const chevron = subDropdownAnchor.lastElementChild;
-
+    /*
     if(subDropdown.contains('displayed--mobile')){
     
         subDropdown.remove('displayed--mobile');
@@ -89,7 +94,26 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
         subDropdownIcon.classList.add('pressed--2');
         chevron.classList.add('pressed--2');
         chevron.classList.add('rotate');
+    }*/
+
+   closeNavbar();
+   navbarItems.forEach(item=>{
+
+    const dropdown = item.lastElementChild;
+    const navbarAnchor = item.firstElementChild;
+    const plusIcon = navbarAnchor.children[1];
+    const minusIcon = navbarAnchor.children[2];
+    
+    if(dropdown.classList.contains('displayed--mobile')){
+        dropdown.classList.remove('displayed--mobile');
+        navbarAnchor.classList.remove('pressed');
+
+        plusIcon.classList.remove('undisplayed--mobile');
+        minusIcon.classList.add('undisplayed--mobile')
+
     }
+
+   });
 }));
 
 /*---------------------------TYNY SLIDER---------------------*/
