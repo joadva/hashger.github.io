@@ -36,8 +36,9 @@ closeButton.addEventListener('click', ()=>{
 const navbarItems = document.querySelectorAll('.navbar__item');
 
 navbarItems.forEach(item => item.addEventListener('click', (event)=>{
+    event.stopPropagation();
     if(item == navbarItems[0]) return;
-    event.preventDefault();
+    /*event.preventDefault(); */
 
     const dropdown = item.lastElementChild;
     const navbarAnchor = item.firstElementChild;
@@ -65,8 +66,7 @@ const dropdownItems = document.querySelectorAll('.first-level > .dropdown__list 
 
 
 dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
-    event.stopPropagation()
-    event.preventDefault();
+    event.stopPropagation();
 
     const subDropdown = item.lastElementChild.classList;
     const subDropdownAnchor = item.firstElementChild;

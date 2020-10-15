@@ -86,7 +86,7 @@ img{max-width: 100%;}
 
 .navbar__dropdown--sub{
     top:-1%;
-    left: 101%;
+    left: 100%;
     font-size: .8em;
 }
 
