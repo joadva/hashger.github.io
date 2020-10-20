@@ -730,6 +730,31 @@ img{max-width: 100%;}
         font-size:1em;
         margin: .2em .2em 2em .2em;
     }
+
+    .courses-categrory-corner__text{
+        font-size: 1em;
+    }
+    .courses-categrory-corner__icon{
+        height: 1em;
+        width: 1em
+    }
+
+    .courses-categrory-corner{
+        position: absolute;
+        left: 0px;
+        top:-1px;
+    }
+
+    .courses-categrory-corner--vermas{
+        left: unset;
+        top: unset;
+        bottom: -2px;
+        right: 0px;
+    }
+
+    
+
+
 }
 
 @media(max-width:33em){
