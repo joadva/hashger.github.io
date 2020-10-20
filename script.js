@@ -197,6 +197,29 @@ let carrusell3 = tns({
             edgePadding: 20,
         },
     },
+})
+
+
+let masterclasses = tns({
+    container: '.courses-carrusell__list--4',
+    mouseDrag: true,
+    items: 2,
+    controls: false,
+    nav:false,
+    autoplayButtonOutput: false,
+    edgePadding: 30,
+    swipeAngle: false,
+
+    responsive:{
+        517:{
+            items: 3,
+            edgePadding: 35,
+
+        },
+        788:{
+            edgePadding: 20,
+        },
+    },
 }) 
 
 
