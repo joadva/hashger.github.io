@@ -834,6 +834,15 @@ img{max-width: 100%;}
     flex-direction: row;
     justify-content: space-between;
 }
+
+.footer__sn-item, .footer__chevrons{
+    transition: transform .1s linear;
+
+}
+
+.footer__sn-item:hover, .footer__chevrons:hover{
+    transform: scale(1.5);
+}
 .footer__icon{
     width: 1.48em;
     height: 1.48em;
@@ -852,8 +861,13 @@ img{max-width: 100%;}
 
 @media(max-width:33em){
     .footer{
-        font-size: .8rem;
+        font-size: 1rem;
     }
+    .footer__chevrons{
+        display: none;
+    }
+    .footer__social-networks{
+        width: 50%;
 }
 
 

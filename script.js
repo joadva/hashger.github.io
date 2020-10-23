@@ -31,7 +31,27 @@ menuButton.addEventListener('click', ()=>{
 });
 
 closeButton.addEventListener('click', ()=>{
-    closeNavbar()
+    closeNavbar();
+    
+    navbarItems.forEach(item=>{
+
+        const dropdown = item.lastElementChild;
+        const navbarAnchor = item.firstElementChild;
+        const plusIcon = navbarAnchor.children[1];
+        const minusIcon = navbarAnchor.children[2];
+        
+        if(dropdown.classList.contains('displayed--mobile')){
+            dropdown.classList.remove('displayed--mobile');
+            navbarAnchor.classList.remove('pressed');
+    
+            plusIcon.classList.remove('undisplayed--mobile');
+            minusIcon.classList.add('undisplayed--mobile');
+            console.log('closed')
+        }
+        
+    
+       });
+    
 })
 
 
@@ -96,7 +116,7 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
         chevron.classList.add('rotate');
     }*/
 
-   closeNavbar();
+  
    navbarItems.forEach(item=>{
 
     const dropdown = item.lastElementChild;
@@ -109,11 +129,17 @@ dropdownItems.forEach(item => item.addEventListener('click', (event)=>{
         navbarAnchor.classList.remove('pressed');
 
         plusIcon.classList.remove('undisplayed--mobile');
-        minusIcon.classList.add('undisplayed--mobile')
-
+        minusIcon.classList.add('undisplayed--mobile');
+        console.log('closed')
     }
+    
 
    });
+
+   closeNavbar();
+
+
+
 }));
 
 /*---------------------------TYNY SLIDER---------------------*/
@@ -227,7 +253,7 @@ let masterclasses = tns({
 let carrusell4 = tns({
     container: '.community__list',
     mouseDrag: true,
-    items: 2,
+    items: 1,
     controls: false,
     nav:false,
     autoplayButtonOutput: false,
