@@ -793,6 +793,11 @@ img{max-width: 100%;}
     text-align: center;
 }
 
+
+.community__item img{
+    width: 20%;
+}
+
 /*************************FOOTER***************************************************/
 .footer{
     background-color: hsl(0, 0%, 3%);
@@ -840,6 +845,7 @@ img{max-width: 100%;}
 
 }
 
+
 .footer__sn-item:hover, .footer__chevrons:hover{
     transform: scale(1.5);
 }
@@ -868,6 +874,7 @@ img{max-width: 100%;}
     }
     .footer__social-networks{
         width: 50%;
+    }
 }
 
 
